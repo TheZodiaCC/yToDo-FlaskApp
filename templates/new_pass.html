@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/sheet.css">
+        <title>New Password</title>
+    </head>
+    <body>
+        <div id="panel">
+            yToDo
+        </div>
+        <div  id="left">
+            &nbsp;
+        </div>
+        <div id="central">
+            <p>
+                Your New Password : <b>{{password}}</b>
+            </p>
+            <p>
+                Your New Backup Code : <b>{{code}}</b>
+            </p>
+
+            <button id="button" onclick="window.location.href = '{{ url_for('home.home')}}';">HOME</button>
+        </div>
+        <div id="right">
+            &nbsp;
+        </div>
+        <div id="footer">
+            CREATED BY <a href="https://github.com/TheZodiaCC" target="_blank">TheZodiaCC </a> &nbsp; & &nbsp; POWERED BY FLASK
+        </div>
+    </body>
+</html>

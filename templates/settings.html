@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/sheet.css">
+        <title>Settings</title>
+    </head>
+    <body>
+        <div id="panel">
+            Settings for {{nick}}
+        </div>
+        <div  id="left">
+            &nbsp;
+        </div>
+        <div id="central">
+            <form action="/settings/change_password" method="post">
+                <p id="login">Backup Code</p>
+                <input id="input" type="text" name="c">
+                <p id="login">New Password</p>
+                <input id="input" type="password" name="p">
+                <p id="login">Repeat New Password</p>
+                <input id="input" type="password" name="p2">
+                <p><input id="button" type="submit" value="CHANGE PASSWORD"></p>
+            </form>
+            <p id="login">LENGTH</p>
+            <p id="login"> 20 > PASSWORD > 8</p>
+            <p>
+                {{error}}
+                {{info}}
+            </p>
+            <button id="button" onclick="window.location.href = '{{ url_for('home.home') }}';">HOME</button>
+        </div>
+        <div id="right">
+            &nbsp;
+        </div>
+        <div id="footer">
+            CREATED BY <a href="https://github.com/TheZodiaCC" target="_blank">TheZodiaCC </a> &nbsp; & &nbsp; POWERED BY FLASK
+        </div>
+    </body>
+</html>

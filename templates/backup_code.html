@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/sheet.css">
+        <title>Backup Code</title>
+    </head>
+    <body>
+        <div id="panel">
+            yToDo
+        </div>
+        <div  id="left">
+            &nbsp;
+        </div>
+        <div id="central">
+            <p>
+                Your Backup Code <b>{{code}}</b>
+            </p>
+            <p>
+                You will need it to change your password or to get your account back if you forget password
+            </p>
+            <button id="button" onclick="window.location.href = '{{ url_for('profile.profile')}}';">I SAW MY BACKUP CODE</button>
+        </div>
+        <div id="right">
+            &nbsp;
+        </div>
+        <div id="footer">
+            CREATED BY <a href="https://github.com/TheZodiaCC" target="_blank">TheZodiaCC </a> &nbsp; & &nbsp; POWERED BY FLASK
+        </div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/sheet.css">
+        <title>Home</title>
+    </head>
+    <body>
+        <div id="panel">
+            yToDo
+        </div>
+        <div  id="left">
+            &nbsp;
+        </div>
+        <div id="central">
+            <form action="/login" method="post">
+                <p id="login">NICKNAME</p>
+                <input id="input" type="text" name="n">
+                <p id="login">PASSWORD</p>
+                <input id="input" type="password" name="p">
+                <p><input id="button" type="submit" value="LOGIN"></p>
+            </form>
+            <p>
+                {{error}}
+                {{info}}
+            </p>
+            <button id="button" onclick="window.location.href = '{{ url_for('register.register') }}';">REGISTER</button>
+            
+            <button id="button" onclick="window.location.href = '{{ url_for('forget.forget')}}';">FORGOT PASSWORD</button>
+        </div>
+        <div id="right">
+            &nbsp;
+        </div>
+        <div id="footer">
+            CREATED BY <a href="https://github.com/TheZodiaCC" target="_blank">TheZodiaCC </a> &nbsp; & &nbsp; POWERED BY FLASK
+        </div>
+    </body>
+</html>

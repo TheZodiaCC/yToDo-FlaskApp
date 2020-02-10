@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/sheet.css">
+        <title>Profile</title>
+    </head>
+    <body>
+        <div id="panel_l">
+            Hi {{name}}
+        </div>
+        <div id="sett">
+            <form action="/settings" method="post">
+                <input id="button_l2" type="submit" value="SETTINGS">
+            </form>
+        </div>
+        <div id="log">
+            <form action="/logout" method="post">
+                <input id="button_l" type="submit" value="LOG OUT">
+            </form>
+        </div>
+        <div id="left2">
+            <form action="/profile/add_thing" method="post">
+                <p>
+                    TITLE <br />
+                    <input type="text" name="title">
+                </p>
+                <p>
+                    CONTENT <br />
+                     <textarea  maxlength="180" name="content" rows="4" cols="50">
+                    </textarea> 
+                </p>
+                <p>
+                    <input id="button" type="submit" value="ADD TO LIST">
+                </p>
+                {{error}}
+            </form>
+        </div>
+        <div id="content">
+            <form action="/profile/delete_thing" method="post">
+                {% for thing in things %}
+                <p id="things_p">   
+                    <span id="thing_title">{{thing.title}}</span> <br /><br />
+                    <span id="thing_content">{{thing.content}}</span> <br /><br />
+                    <button id="button_del" type="submit" name="delete" value="{{thing.title}}">Delete</button> <br />
+                </p>
+                {% endfor %}
+            </form>
+        </div>
+    </body>
+</html>

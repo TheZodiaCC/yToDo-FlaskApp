@@ -1,0 +1,161 @@
+html, body {
+    background-color: #E1E2E2;
+    margin: 0;
+    padding: 0.5%;
+    font-family: Georgia, serif;
+}
+#panel {
+    background-color: #1D2228;
+    width: 99%;
+    padding: 0.5%;
+    color: white;
+    font-size: 200%;
+    font-style: oblique;
+    margin: 0;
+}
+#panel_l {
+    background-color: #1D2228;
+    width: 50%;
+    padding: 0.5%;
+    color: white;
+    font-size: 200%;
+    font-style: oblique;
+    float: left;
+}
+#left {
+    width: 33%;
+    float: left;
+    margin: auto;
+}
+#left2 {
+    width: 24%;
+    float: left;
+    margin-top: 1.2%;
+    background-color: #a9abab;
+    padding: 0.5%;
+}
+#central {
+    width: 33%;
+    float: left;
+    padding: 0.5%;
+    text-align: center;
+    font-style: oblique;
+}
+#right {
+    width: 33%;
+    float: left;
+    margin: auto;
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    clear: both;
+    margin: 1%;
+    padding: 0.5%;
+    background-color: #1D2228;
+    color: white;
+    font-style: oblique;
+    font-size: 100%;
+    text-align: center;
+}
+#login {
+    font-family: Georgia, serif;
+    font-size: 150%;
+}
+#button {
+    background-color: #FB8122;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    padding: 1%;
+    font-size: 100%;
+}
+#button_l {
+    background-color: #FB8122;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    border: none;
+    width: 99.5%;
+    padding: 0.5%;
+    margin: 0;
+    font-size: 200%;
+    font-style: oblique;
+}
+#button_l2 {
+    background-color: #d46a17;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    border: none;
+    width: 99.5%;
+    padding: 0.5%;
+    margin: 0;
+    font-size: 200%;
+    font-style: oblique;
+}
+#button_del {
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    padding: 1%;
+    font-size: 100%;
+}
+#input {
+    box-sizing: border-box;
+    padding: 2%;
+}
+a {
+    color: white;
+}
+#sett {
+    margin: 0;
+    float: left;
+    width: 23%;
+    padding: 0.5%;
+}
+#log {
+    margin: 0;
+    float: left;
+    width: 23%;
+    padding: 0.5%;
+}
+#content {
+    width: 70%;
+    padding: 0.5%;
+    color: white;
+    font-size: 100%;
+    margin: auto;
+    float: left;
+}
+#button_l:hover {
+    background-color: #a9abab;
+}
+#button_l2:hover {
+    background-color: #a9abab;
+}
+#thing_title {
+    color: black;
+    font-size: 200%;
+    font-style: oblique;
+    margin: 1%;
+    padding: 1%;
+}
+#thing_content {
+    color: black;
+    font-size: 120%;
+    font-style: oblique;
+}
+#things_p {
+    margin: 1%;
+    padding: 0.5%;
+    background-color: #a9abab;
+}

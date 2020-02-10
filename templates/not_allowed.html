@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/sheet.css">
+        <title>Not Allowed</title>
+    </head>
+    <body>
+        <div id="panel">
+            yToDo
+        </div>
+        <div  id="left">
+            &nbsp;
+        </div>
+        <div id="central">
+            <p>
+                NOT ALLOWED CONTENT
+            </p>
+            <button id="button" onclick="window.location.href = '{{ url_for('home.home')}}';">TAKE ME HOME</button>
+        </div>
+        <div id="right">
+            &nbsp;
+        </div>
+        <div id="footer">
+            CREATED BY <a href="https://github.com/TheZodiaCC" target="_blank">TheZodiaCC </a> &nbsp; & &nbsp; POWERED BY FLASK
+        </div>
+    </body>
+</html>
